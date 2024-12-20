@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore travel destinations, tips, and guides.">
+    <meta name="keywords" content="travel, destinations, blog, tips">
+    <title>VoyageDestinations France - Get a Quote</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<header>
+        <nav>
+            <div class="logo">VoyageDestination France</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paris.html">Popular</a></li>
+                <li><a href="contact.html">Get Your Quote</a></li>
+            </ul>
+        </nav>
+</header>
+
+     <div class="container">
+        <form id= "contactForm">
+            <h1> Leave your details, we'll get back to you soon!</h1>
+            <input type="text" id="name" placeholder="Add your first name" required>
+            <input type="text" id="name" placeholder="Add your last name" required>
+            <input type="email" id="email" placeholder="Add your email" required>
+            <input type="text" id="phone" placeholder="Add your phone" required>
+            <textarea id="message" rows="4" placeholder="Where do you want to spend your holiday?"></textarea>
+            <button type="submit">Send to get a quote!</button>
+        </form>
+    </div>
+</div>
+<script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('We received your message and we will get back to you soon!');
+        });
+</script>
+</body>
+</html>

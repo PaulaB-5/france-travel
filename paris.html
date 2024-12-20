@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<hmtl>
+<body>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Paris, the most popular destination">
+    <meta name="keywords" content="Paris, destinations, blogs, tips">
+    <title>VoyageDestinations France - Popular</title>
+		<link rel="stylesheet" href="paris.css">
+</head>
+	<header>
+        <nav>
+            <div class="logo">VoyageDestination France </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paris.html">Popular</a></li>
+                <li><a href="contact.html">Get Your Quote</a></li>
+            </ul>
+        </nav>
+</header>
+<section class="destinations">
+            <h2>Discover Paris: A Symphony of Culture and Charm</h2>
+            <div class="destination-cards">
+                <div class="card">
+                   
+                	<iframe width="500" height="315" src="https://www.youtube.com/embed/A33guhf4zGM?si=SLK3XFcnWSPfOZ1O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                	
+                    <h3>Must Visit in Paris</h3>
+                </div>
+                <div class="card">
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/wroGPb4-3yM?si=rPn2E23-HoViY9Ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3> A 4K Tour</h3>
+                </div>
+           
+            </div>
+        </section>
+<h1>The city of history and romance:</h1>
+<button onclick="myFunction()">Read about Paris</button>
+<p id="demo"></p>
+<div id="content">
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML="<br>Paris, the enchanting capital of France, is renowned for its timeless beauty, rich history, and vibrant culture. Often referred to as the City of Light, Paris is a global center for art, fashion, gastronomy, and intellectual pursuits. The city is home to iconic landmarks like the Eiffel Tower, the majestic Notre Dame Cathedral, and the Louvre Museum, which houses masterpieces such as the Mona Lisa. Strolling along the Seine River or through the charming streets of Montmartre, visitors are immersed in the romantic ambiance that Paris is famous for. From its exquisite cuisine to its bustling cafés, Paris offers an unparalleled blend of tradition and modernity that captivates millions of travelers each year.<br>"
+    }
+    
+        document.getElementById("demo").style.cssText="font-family:Arial,sans-erif;background-color: white;font-size:19px;color:black;font-weight:400;font-weight:300;margin-left: 50px; margin-right: 50px; margin-top:20px;text-align: center; display: flex; justify-content: center; align-items: center; "
+</script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<div id="map" style="height: 500px;"></div>
+<script>
+    const map = L.map('map').setView([48.8566, 2.3522], 13); // Paris coordinates
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([48.8566, 2.3522]).addTo(map).bindPopup('Paris, France').openPopup();
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<div id="map" style="height: 500px;width: 400px; border: 2px; border-radius: 10px; margin:20px 0"></div>
+<script>
+    const map = L.map('map').setView([48.857069, 2.294719]); // Paris coordinates
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+    L.marker([48.857069, 2.294719]).addTo(map).bindPopup('Paris, France').openPopup();
+    bringtofront
+    getCentr();
+</script>
